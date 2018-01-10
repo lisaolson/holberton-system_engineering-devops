@@ -1,2 +1,3 @@
 #!/bin/bash
-chown --from=vagrant:vagrant betty:holberton *\
+chown betty:holberton *
+
