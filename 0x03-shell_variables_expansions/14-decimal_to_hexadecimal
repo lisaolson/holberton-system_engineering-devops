@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%x2" "$((DECIMAL))" 
+printf "%x \n%s\n" "$((DECIMAL))"
