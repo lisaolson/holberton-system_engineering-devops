@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+for i in {0..12}
+do
+	echo "Hour: $i"
+	for i in {1..59}
+	do
+		echo $i
+	done
+done
