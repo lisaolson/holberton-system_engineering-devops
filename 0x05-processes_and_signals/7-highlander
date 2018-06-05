@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# kills a process
+while :
+do
+	trap "echo I am invincible!!!" SIGTERM
+	echo "To infinity and beyond"
+	sleep 2
+done
