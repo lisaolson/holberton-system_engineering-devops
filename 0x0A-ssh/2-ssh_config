@@ -1,0 +1,5 @@
+Host 291-web-01
+    User ubuntu
+    Port 35.231.199.139
+    IdentityFile ~/.ssh/holberton
+    PasswordAuthentication no
