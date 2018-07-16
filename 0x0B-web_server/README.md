@@ -23,5 +23,5 @@ The goal for this project is to look at the concepts of DNS, Web Server, CI/CD, 
 | 3-redirection | Configures Nginx server so that /redirect_me is redirecting to another page |
 | 4-not_found_page_404 | Configures Nginx server to have a custom 404 page |
 
-#### Authors
-Isaac Wong, Lisa Olson
+#### Author
+Lisa Olson
