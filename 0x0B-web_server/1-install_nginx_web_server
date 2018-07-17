@@ -2,4 +2,4 @@
 # installs Nginx on a web server
 sudo apt-get -y install nginx
 sudo bash -c 'echo "Holberton School" > /usr/share/nginx/html/index.html'
-sudo service nginx reload
+sudo service nginx start
