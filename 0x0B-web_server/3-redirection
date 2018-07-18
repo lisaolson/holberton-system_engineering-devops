@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures server to redirect to another page
+sudo apt-get -y update
+sudo apt-get -y install nginx
+new_string="line number 1\nline number 2\nline number 3"
+sed -i "s/string_to_replace/$new_string/" file
+sudo service nginx start
