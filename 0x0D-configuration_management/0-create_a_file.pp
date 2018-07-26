@@ -1,4 +1,4 @@
-file { '/tmp/holberton':
+file { 'holberton':
     path    => '/tmp/holberton',
     ensure  => file,
     mode    => '0700',
