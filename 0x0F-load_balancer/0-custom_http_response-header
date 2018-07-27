@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Adds a custom HTTP Header
+apt-get -y update
+apt-get -y install nginx
+new_string="\tlocation \/\n\t\tadd_header X-Served-By 03-web-02;\n"
+sed -i "s/^\tlocation \//$new_string/" /etc/nginx/sites-enabled/default
+service nginx restart

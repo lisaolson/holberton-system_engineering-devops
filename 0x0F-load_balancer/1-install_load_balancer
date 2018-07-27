@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Installs and configures HAproxy on lb-01 server
+
+
