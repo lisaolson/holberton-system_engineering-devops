@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # runs and listens on port 80
-
-new_string="include /etc/nginx/sites-available/*;"
-sed -i -e "s/include /etc/nginx/sites-enabled/*;/$new_string/" /etc/nginx/nginx.conf
+sed -i -e "s/8080/80/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
