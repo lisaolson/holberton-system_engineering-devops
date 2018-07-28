@@ -2,6 +2,5 @@
 # Adds a custom HTTP Header
 apt-get -y update
 apt-get -y install nginx
-new_string="\n\tadd_header X-Served-By $HOSTNAME;\n"
-sed -i "37i $new_string" /etc/nginx/sites-available/default
+sed -i "37iadd_header X-Served-By: $HOSTNAME;" /etc/nginx/sites-available/default
 service nginx restart
