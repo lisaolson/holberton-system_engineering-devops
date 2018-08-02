@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Takes in an argument that assigns the new user
-ME="$(whoami) $1"
-echo "$ME" | cut -d " " -f 2
+sudo -u "$1" whoami
