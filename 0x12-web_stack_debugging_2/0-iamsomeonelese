@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Takes in an argument that assigns the new user
+# ME="$(whoami) nginx"
+echo $1
