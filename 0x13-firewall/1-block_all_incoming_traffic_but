@@ -1,6 +1,6 @@
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
 sudo ufw allow ssh
 sudo ufw allow https
 sudo ufw alow http
-sudo ufw allow from 35.231.199.139 to any port 22
-sudo ufw allow from 35.231.199.139 to any port 443
-sudo ufw allow from 35.231.199.139 to any port 80
+sudo ufw enable
