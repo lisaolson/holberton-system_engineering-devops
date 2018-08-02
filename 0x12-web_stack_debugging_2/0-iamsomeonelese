@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Takes in an argument that assigns the new user
-# ME="$(whoami) nginx"
-echo $1
+ME="$(whoami) $1"
+echo $ME | cut -d " " -f 2
