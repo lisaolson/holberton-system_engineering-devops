@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configures container to run as nginx user
-pkill apache2
-sed -i 's/80/8080/' /etc/nginx/sites-enabled/*
+pkill -f apache2
+sed -i 's/80/8080/' /etc/nginx/sites-available/default
 chown nginx:nginx /etc/nginx/nginx.conf
 chmod 700 /etc/nginx/nginx.conf
-sudo service nginx restart
+sudo -u nginx service nginx restart
