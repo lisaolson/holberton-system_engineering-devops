@@ -19,7 +19,7 @@ todo_data = todo_resp.json()
 for todo in todo_data:
     if todo['userId'] == emp_id:
         TOTAL_NUMBER_OF_TASKS += 1
-        if todo['completed'] == True:
+        if todo['completed']:
             NUMBER_OF_DONE_TASKS += 1
 
 EMPLOYEE_NAME = emp_name
@@ -28,4 +28,5 @@ print('Employee {} is done with tasks({}/{}):'.format(EMPLOYEE_NAME, NUMBER_OF_D
 
 for todo in todo_data:
     if todo['userId'] == emp_id:
-        print('\t {}'.format(todo['title']))
+        if todo['completed']:
+            print('\t {}'.format(todo['title']))
