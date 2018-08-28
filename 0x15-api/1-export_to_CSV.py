@@ -9,10 +9,11 @@ import sys
 def export_csv():
     emp_id = int(sys.argv[1])
     resp = requests.\
-        get('https://jsonplaceholder.typicode.com/users/{}'.format(emp_id)).json()
+        get('https://jsonplaceholder.typicode.com/users/{}'.format(emp_id)).\
+        json()
     emp_name = resp['name']
-    
-    todo_resp = requests.get('https://jsonplaceholder.typicode.com/todos').json()
+    todo_resp = requests.\
+        get('https://jsonplaceholder.typicode.com/todos').json()
 
     download_dir = "{}.csv".format(sys.argv[1])
     with open(download_dir, "w", newline='') as csvfile:
