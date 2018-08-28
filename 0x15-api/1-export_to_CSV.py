@@ -11,7 +11,7 @@ def export_csv():
     resp = requests.\
         get('https://jsonplaceholder.typicode.com/users/{}'.format(emp_id)).\
         json()
-    emp_name = resp['name']
+    username = resp['username']
     todo_resp = requests.\
         get('https://jsonplaceholder.typicode.com/todos').json()
 
@@ -22,7 +22,7 @@ def export_csv():
             if todo['userId'] == emp_id:
                 completed = todo['completed']
                 title = todo['title']
-                f.writerow([emp_id, emp_name, completed, title])
+                f.writerow([emp_id, username, completed, title])
 
 if __name__ == '__main__':
     export_csv()
