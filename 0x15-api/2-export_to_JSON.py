@@ -18,15 +18,15 @@ def export_json():
     download_dir = "{}.json".format(sys.argv[1])
 
     return_data = []
-    todo_dict = {}
-    with open(download_dir, "w", newline='') as jsonfile:
-        for todo in todo_resp:
-            if todo['userId'] == emp_id:
-                todo_dict['task'] = todo['title']
-                todo_dict['completed'] = todo['completed']
-                todo_dict['username'] = username
-                return_data.append(todo_dict)
-        return_dict = {emp_id: return_data}
+    for todo in todo_resp:
+        if todo['userId'] == emp_id:
+            todo_dict = {}
+            todo_dict['task'] = todo['title']
+            todo_dict['completed'] = todo['completed']
+            todo_dict['username'] = username
+            return_data.append(todo_dict)
+    return_dict = {emp_id: return_data}
+    with open(download_dir, "w") as jsonfile:
         json.dump(return_dict, jsonfile)
 
 if __name__ == '__main__':
