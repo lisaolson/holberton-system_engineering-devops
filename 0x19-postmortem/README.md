@@ -2,6 +2,7 @@
 
 ## Issue Summary
 2018/9/12 - 2018/9/15 (70 hours)
+
 From September 12th, 3:57am through September 15th, 1:00am, we experienced a site-wide outage spanning just under 3 days causing over 4,000 error messages.  We saw spikes in our monitoring tools reporting 100% of traffic was affected.  Due to the severity of the outage, no users were able to access the site for the entire 35 hours.  The root cause of the outage was unanticipated flooding that ravaged the city.
 
 ## Timeline (PT)
