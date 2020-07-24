@@ -3,6 +3,6 @@
 COUNTER=10
 until [ $COUNTER == 0 ]
 do
-	echo "Holberton School"
+	echo "School"
 	let COUNTER-=1
 done
