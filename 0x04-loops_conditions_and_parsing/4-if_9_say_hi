@@ -3,7 +3,7 @@
 i=1
 while [ $i -le 10 ]
 do
-	printf "Holberton School\n"
+	printf "School\n"
 	if [ $i -eq 9 ]
 	then
 		echo "Hi"
