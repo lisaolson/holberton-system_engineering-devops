@@ -10,7 +10,7 @@ do
 	then
 		echo "good luck"
 	else
-		echo "Holberton School"
+		echo "School"
         fi
         i=$(( i + 1 ))
 done
