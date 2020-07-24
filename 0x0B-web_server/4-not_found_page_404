@@ -2,7 +2,7 @@
 # Configure server to have a custom 404 page
 sudo apt-get -y update
 sudo apt-get -y install nginx
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+echo "School" | sudo tee /usr/share/nginx/html/index.html
 new_string="server_name localhost;\n\n\tlocation \/redirect_me {\n\t\trewrite ^\/(.*)$ https:\/\/www.google.com permanent;\n\t}"
 sed -i "s/^\tserver_name localhost;/$new_string/" /etc/nginx/sites-available/default
 sed -i "s/#error_page 404/error_page 404/" /etc/nginx/sites-available/default
